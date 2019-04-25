@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\bin\Debug\FolaBami2019Sol.exe.config
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\bin\Debug\FolaBami2019Sol.exe
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\bin\Debug\FolaBami2019Sol.pdb
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\obj\Debug\FolaBami2019Sol.csprojAssemblyReference.cache
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\obj\Debug\FolaBami2019Sol.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\obj\Debug\FolaBami2019Sol.exe
+C:\Users\user\Desktop\TEST\FB2019sol\FolaBami2019Sol\obj\Debug\FolaBami2019Sol.pdb
