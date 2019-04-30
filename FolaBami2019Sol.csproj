@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Child\Folake.cs" />
+    <Compile Include="Grandparent\Kay.cs" />
+    <Compile Include="Parent\Michael.cs" />
+    <Compile Include="PriMeth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicMeth.cs" />
+    <Compile Include="Sqauare.cs" />
+    <Compile Include="Static Things\StaticChecks.cs" />
+    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
