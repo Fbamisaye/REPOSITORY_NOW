@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallContructor.cs" />
+    <Compile Include="ChildClass.cs" />
     <Compile Include="Child\Folake.cs" />
+    <Compile Include="ConstructMe.cs" />
     <Compile Include="Grandparent\Kay.cs" />
+    <Compile Include="ParentClass.cs" />
     <Compile Include="Parent\Michael.cs" />
     <Compile Include="PriMeth.cs" />
     <Compile Include="Program.cs" />

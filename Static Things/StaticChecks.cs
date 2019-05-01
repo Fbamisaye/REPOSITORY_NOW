@@ -24,6 +24,17 @@ namespace FolaBami2019Sol.Static_Things
       {
           Console.WriteLine("the value for the static number is {0}", staticNumber);
       }
+        // this is a static method
+
+      public static void SetStaticValue(int paramTwo)
+      {
+          staticNumber = paramTwo;
+      }
+
+      public static void GetStaticValue()
+      {
+          Console.WriteLine("the value of the static number is {0}", staticNumber);
+      }
   }
 
 }

@@ -12,84 +12,24 @@ using FolaBami2019Sol.Static_Things;
 
 namespace FolaBami2019Sol
 {
-	class Program
+	  public  class Program
 	{
 
         static void Main(string[] args)
 
         {
+            //ChildClass childClass = new ChildClass();
+            //childClass.CallMyBankDetails();
+            //childClass.DeclareMyBankingDetails();
 
+            CallContructor callconstructor = new CallContructor("Cat", 2, 4);
+            callconstructor.CreateAnimal();
 
-            //  create object 1 of class triangle first(void)
-            //Triangle triangleIsocesles = new Triangle();
-            //triangleIsocesles.triBase = 10;
-            //triangleIsocesles.triHeights = 10;
-            //triangleIsocesles.TriangleArea();
-
-            // CREATE ANOTHER OBJECT 2 OF class TRIANGLE SECOND(void)
-            //Triangle triangleRight = new Triangle();
-            //triangleRight.triBase = 7;
-            //triangleRight.triHeights = 23;
-            //triangleRight.TriangleArea();
-
-            // this will be with a return
-            //Triangle Squarecal = new Triangle();
-            //Squarecal.triBase = 23;
-            //Squarecal.triHeights = 23;
-            //Squarecal.SquarePerimeter();
-
-
-            //this will take parameters
-            //Triangle poly = new Triangle();
-            ////poly.PolygonArea(100, 10);
-
-            //PublicMeth pm = new PublicMeth();
-            //pm.age = 12;
-            //pm.name = "Angel";
-            //pm.StudentDetails();
-
-            //Console.WriteLine();
-            //PriMeth priMeth = new PriMeth();
-            //priMeth.studentDetails(24, "ola");
-            //priMeth.studentSomething();
-
-            //GrandP grandP = new GrandP();
-            //grandP.CallMyName();
-            //Console.WriteLine("change name to Kevin");
-            //grandP.MichaelName = "Kevin";
-            //grandP.CallMyName();
-            //Console.WriteLine();
-            //Guardian guardian = new Guardian();
-            //guardian.CallParents();
-            
-            //Triangle triangleAcc = new Triangle();
-            //triangleAcc.TriangleArea();
-
-            //Triangle triangleGP = new Triangle();
-            //triangleGP.triheight = 21;
-            //Console.WriteLine(" tolu is " + triangleGP.triheight + " meters tall ");
-
-            //Folake folake = new Folake();
-            //folake.PickinName();
-            //folake.PickinAge();
-            //folake.childAge = 25;
-            //folake.PickinAge();
-            //Console.WriteLine();
-            //folake.CallDaddyName();
-            //folake.CallDaddyAge();
-            //folake.MarriedName();
-
-
-            // STATIC VARIABLES & METHODS
-             StaticChecks staticChecks = new StaticChecks();
-             staticChecks.name = "Andre";
-             staticChecks.age = 25;
+            Console.WriteLine("------");
+            CallContructor callconstructorNew = new CallContructor("Dragon", 2, 4, 1);
+            callconstructorNew.CreateAnimal();
            
-             staticChecks.SetValue(1111);
-             staticChecks.GetValue();
-             Console.WriteLine();
-             StaticChecks.staticNumber = 2222;
-             staticChecks.GetValue();
+
 
             Console.ReadKey();
 
