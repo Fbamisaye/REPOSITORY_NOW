@@ -18,9 +18,49 @@ namespace UNIT_TEST_TWO.Base
 {
 
     [TestClass]
-    public class BaseClass
 
+    public class BaseClass
     {
+        #region BrowserOptions
+
+        private static ChromeOptions GetChromeOption()
+        {
+            var cOptions = new ChromeOptions();
+            cOptions.AddArgument("start-maximized");
+            return cOptions;
+        }
+
+        private static InternetExplorerOptions GetIEOptions()
+        {
+            var iEOptions = new InternetExplorerOptions();
+
+            {
+                iEOptions.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                iEOptions.EnsureCleanSession = true;
+
+            }
+            return iEOptions;
+
+        }
+
+        private static FirefoxProfile GetFireFoxOptions()
+        {
+            var  fOptions = new FirefoxProfile();
+            var fXManager = new FirefoxProfileManager();
+            fOptions = fXManager.GetProfile("default");
+            return fOptions;
+        }
+        #endregion
+
+        private static ChromeOptions GetMoreChromeOptions()
+        {
+            var mChromeOptions = new ChromeOptions();
+            mChromeOptions.AddArgument("---headless");
+            return mChromeOptions;
+        }
+
+        #region DriverInstance
+
         private static  IWebDriver GetFirefoxDriver()
         {
             IWebDriver driver = new FirefoxDriver();
@@ -30,7 +70,7 @@ namespace UNIT_TEST_TWO.Base
 
         private static IWebDriver GetChromeDriver()
         {
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new ChromeDriver(GetChromeOption());
             return driver;
 
         }
@@ -38,12 +78,15 @@ namespace UNIT_TEST_TWO.Base
 
         private static IWebDriver GetIExplorerDriver()
         {
-            IWebDriver driver = new InternetExplorerDriver();
+            IWebDriver driver = new InternetExplorerDriver(GetIEOptions());
             return driver;
 
         }
 
 
+        #endregion
+
+#region BrowserLaunch
 
         [AssemblyInitialize]
 
@@ -70,26 +113,28 @@ namespace UNIT_TEST_TWO.Base
             }
         }
 
+        private static Exception NoSuitableDriverFound(string v, BrowserTypes browserTypes)
+        {
+            throw new NotImplementedException();
+        }
+
         [AssemblyCleanup]
         public static void TearDown()
         {
             if (ObjectRepository.Driver!= null)
             {
                 //ObjectRepository.Driver.Quit();
-                ObjectRepository.Driver.Close();
-                //ObjectRepository.Driver.Dispose();
+               // ObjectRepository.Driver.Close();
+                ObjectRepository.Driver.Dispose();
             }
 
         }
 
+#endregion
 
 
 
-
-        private static Exception NoSuitableDriverFound(string v, BrowserTypes browserTypes)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 
 }

@@ -3,6 +3,7 @@ using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using UNIT_TEST_TWO.ComponentHelper;
 using UNIT_TEST_TWO.Con_figuration;
 using UNIT_TEST_TWO.Configuration;
 using UNIT_TEST_TWO.Interfaces;
@@ -41,17 +42,13 @@ namespace UNIT_TEST_TWO
         //}
 
         [TestMethod]
-        
-
         public void SimpleMethod()
         {
 
-            //Console.WriteLine(_config.GetUserName());
-
-
-            //Console.WriteLine(_config.GetBrowser());
-
-            //Console.WriteLine(_config.GetPassword());
+            NavigationHelper.
+                NavigateToUrl(ObjectRepository.
+                    Config1.
+                    GetWebsite());
 
         }
 
