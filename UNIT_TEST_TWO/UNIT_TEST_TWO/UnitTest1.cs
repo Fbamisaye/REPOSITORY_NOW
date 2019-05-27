@@ -50,6 +50,10 @@ namespace UNIT_TEST_TWO
                     Config1.
                     GetWebsite());
 
+            //object pageTitle = PageTitleHelper.GetPageTitle();
+            Console.WriteLine("the page title is: {0}", PageTitleHelper.GetPageTitle());
+          
+
         }
 
 

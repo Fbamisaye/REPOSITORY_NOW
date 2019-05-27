@@ -12,7 +12,8 @@ namespace UNIT_TEST_TWO.Con_figuration
         Firefox,
         Chrome,
         IExplorer,
-        Edge
+        Edge,
+        ChromeHeadless
 
     }
 }

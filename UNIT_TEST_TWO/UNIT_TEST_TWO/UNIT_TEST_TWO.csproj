@@ -58,12 +58,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseClass.cs" />
+    <Compile Include="ComponentHelper\GeneraicHelper.cs" />
+    <Compile Include="ComponentHelper\LinkHelper.cs" />
     <Compile Include="ComponentHelper\NavigationHelper.cs" />
+    <Compile Include="ComponentHelper\PageTitleHelpers.cs" />
+    <Compile Include="ComponentHelper\TextBoxHelper.cs" />
     <Compile Include="Configuration\AppConfigReader.cs" />
     <Compile Include="Configuration\BrowserTypes.cs" />
     <Compile Include="CustomException\NoSuitableDriverFound.cs" />
     <Compile Include="Interfaces\ICongfig.cs" />
     <Compile Include="SandBox\Navigation\Test_Navigation.cs" />
+    <Compile Include="SandBox\WebElementts\TestWebElements.cs" />
     <Compile Include="Settings\AppConfigKeys.cs" />
     <Compile Include="Settings\ObjectRepository.cs" />
     <Compile Include="UnitTest1.cs" />

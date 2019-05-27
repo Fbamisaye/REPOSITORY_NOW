@@ -83,6 +83,11 @@ namespace UNIT_TEST_TWO.Base
 
         }
 
+        private static IWebDriver GetExrtaChromeDriver()
+        {
+            IWebDriver driver = new ChromeDriver(GetMoreChromeOptions());
+            return driver;
+        }
 
         #endregion
 
@@ -107,6 +112,12 @@ namespace UNIT_TEST_TWO.Base
                 case BrowserTypes.IExplorer:
                     ObjectRepository.Driver = GetIExplorerDriver();
                     break;
+
+
+                case BrowserTypes.ChromeHeadless:
+                    ObjectRepository.Driver = GetExrtaChromeDriver();
+                    break;
+
 
                 default:
                     throw NoSuitableDriverFound("Driver not found {0}", ObjectRepository.Config1.GetBrowser());
